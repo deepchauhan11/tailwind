@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Games Hub</title>
+
+</head>
+<body class="text-gray-600">
+    <div class="grid md:grid-cols-3">
+
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div>
+                    <!-- <div class="flex items">
+                        <div class="bg-amber-700 h-4 w-6"></div>
+                        <div class="bg-amber-600 h-8 w-6"></div>
+                        <div class="bg-amber-500 h-16 w-6"></div>
+                    </div> -->
+                    <div class="flex justify-between items-center border-b border-amber-600 md:border-red-500 sm:border-amber-500">
+                        <h1 class="text-amber-700 uppercase text-6xl font-bold p-4">Games Hub</h1>
+                        <div class="px-4 cursor-pointer md:hidden" id="hamburger">
+                            <svg class="w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="text-gray-950 text-sm mt-6 hidden md:block" id="menu">
+                        <li class=" p-1 pe-3 border-r-4 border-amber-700">
+                            <a href="#" class="hover:text-amber-400">Home</a>
+                            <span class="font-bold">
+                                <svg class="w-5 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
+                                  </svg>
+                            </span>
+                        </li>
+                        <li class=" p-1 pe-3 border-r-4 border-amber-300">
+                            <a href="#" class="hover:text-amber-400">About Us</a>
+                            <span class="font-bold">
+                                <svg class="w-5 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class=" p-1 pe-3 border-r-4 border-amber-300">
+                            <a href="#" class="hover:text-amber-400">Contact</a>
+                            <span class="font-bold">
+                                <svg class="w-5 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class=" p-1 pe-3 border-r-4 border-amber-300">
+                            <a href="#" class="hover:text-amber-400">Play Zone</a>
+                            <span class="font-bold">
+                                <svg class="w-5 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"></path>
+                                  </svg>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <main class="px-16 py-6 bg-amber-100 md:col-span-2">
+
+            <div class="flex justify-start sm:justify-end">
+                <a href="#" class="text-amber-700 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider border-2 border-amber-700 hover:bg-amber-700 hover:text-white">Login</a>
+                <a href="#" class="text-amber-700 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer ml-2 tracking-wider border-2 border-amber-700 hover:bg-amber-700 hover:text-white">Signup</a>
+            </div>
+
+            
+
+            <header>
+                <h2 class="text-6xl text-amber-500 font-semibold">Game Type</h2>
+                <h3 class="text-2xl">Quick Plays</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold text-2xl text-amber-500 mt-12 pb-2 border-b border-amber-500">Trending Games</h4>
+                <div class="mt-8">
+                    <div class="bg-white rounded overflow-hidden shadow-md relative">
+                        <div>
+                            <img class="w-full h-32 sm:h-48 object-cover" src="assets/img/game-3.jpg" alt="Chess">
+                        </div>
+                        <div class="m-4 relative">
+                            <span class="font-bold">Chess Games Hubilti</span>
+                            <span class="block text-sm text-light italic">Build by Deepak Gaming</span>
+                            <div class="flex absolute ml-40 top-1">
+                                <span class="font-bold">
+                                    <a href="#" class="text-amber-700 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer ml-2 tracking-wider border-2 border-amber-700 hover:bg-amber-700 hover:text-white">Buy</a>
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="bg-amber-300 text-white-100 font-bold rounded-full p-2 absolute top-0 ml-3 mt-3">
+                            <span class="font-bold">
+                                <svg class="w-5 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </span>
+                            <span>35</span>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+                <h4 class="font-bold text-2xl text-amber-500 mt-12 pb-2 border-b border-amber-500">Upcoming Games</h4>
+                <div class="mt-8 grid lg:grid-cols-3 gap-5">
+                    <div class="card hover:shadow-lg">
+                        <div class="bg-white rounded overflow-hidden shadow-md relative mt-4">
+                            <div>
+                                <img class="w-full h-32 sm:h-48 object-cover" src="assets/img/game-3.jpg" alt="Chess">
+                            </div>
+                            <div class="m-4 relative">
+                                <span class="font-bold">Card Games Hubilti</span>
+                                <span class="block text-sm text-light italic">Build by Alpha Gaming</span>
+                                <div class="flex absolute top-1 ml-40 justify-end">
+                                    <span class="font-bold">
+                                        <a href="#" class="text-amber-700 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer ml-2 tracking-wider border-2 border-amber-700 hover:bg-amber-700 hover:text-white">Buy</a>
+                                    </span> 
+                                </div>
+                            </div>
+                            <div class="bg-amber-300 text-white-100 font-bold rounded-full p-2 absolute top-0 ml-3 mt-3">
+                                <span class="font-bold">
+                                    <svg class="w-5 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <span>25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <div class="bg-white rounded overflow-hidden shadow-md relative mt-4">
+                            <div>
+                                <img class="w-full h-32 sm:h-48 object-cover" src="assets/img/game-3.jpg" alt="Chess">
+                            </div>
+                            <div class="m-4 relative">
+                                <span class="font-bold">Card Games Hubilti</span>
+                                <span class="block text-sm text-light italic">Build by Alpha Gaming</span>
+                                <div class="flex absolute top-1 ml-40 justify-end">
+                                    <span class="font-bold">
+                                        <a href="#" class="text-amber-700 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer ml-2 tracking-wider border-2 border-amber-700 hover:bg-amber-700 hover:text-white">Buy</a>
+                                    </span> 
+                                </div>
+                            </div>
+                            <div class="bg-amber-300 text-white-100 font-bold rounded-full p-2 absolute top-0 ml-3 mt-3">
+                                <span class="font-bold">
+                                    <svg class="w-5 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <span>25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <div class="bg-white rounded overflow-hidden shadow-md relative mt-4">
+                            <div>
+                                <img class="w-full h-32 sm:h-48 object-cover" src="assets/img/game-3.jpg" alt="Chess">
+                            </div>
+                            <div class="m-4 relative">
+                                <span class="font-bold">Card Games Hubilti</span>
+                                <span class="block text-sm text-light italic">Build by Alpha Gaming</span>
+                                <div class="flex absolute top-1 ml-40 justify-end">
+                                    <span class="font-bold">
+                                        <a href="#" class="text-amber-700 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer ml-2 tracking-wider border-2 border-amber-700 hover:bg-amber-700 hover:text-white">Buy</a>
+                                    </span> 
+                                </div>
+                            </div>
+                            <div class="bg-amber-300 text-white-100 font-bold rounded-full p-2 absolute top-0 ml-3 mt-3">
+                                <span class="font-bold">
+                                    <svg class="w-5 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <span>25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>Load More Games....</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
